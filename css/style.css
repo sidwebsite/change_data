@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,700&display=swap&subset=chinese-traditional');
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #eee
+}
+/*header*/
+.header {
+    position: relative;
+    background-image: url(../images/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8rem 0 
+}
+.header .bigTitle {    
+    text-align: center;
+}
+.header .bigTitle h1 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+#citySelect {
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+    border: 3px solid #fff;
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+}
+/*熱門行政區*/
+.topOffset {
+    margin-top: -3rem;   
+    margin-bottom: 3rem;
+
+}
+.popularCity {
+    padding: 3rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1)
+
+}
+.popularCity h3 {
+    padding-bottom: 1rem;
+}
+.popularCityBtn .btn {    
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 0.6rem 1.6rem;
+    
+}
+.popularCityBtn .btn ~ .btn {
+    margin-left: 1rem;
+}
+.popularCityBtn .btn:nth-child(1){
+    background-color: #8A82CC;
+}
+.popularCityBtn .btn:nth-child(2){
+    background-color: #FFA782;
+}
+.popularCityBtn .btn:nth-child(3){
+    background-color: #F5D005;
+}
+.popularCityBtn .btn:nth-child(4){
+    background-color: #559ac8;
+}
+.popularCityBtn .btn:hover:nth-child(1){
+    background-color: #5d588b;
+}
+.popularCityBtn .btn:hover:nth-child(2){
+    background-color: #b4765b;
+}
+.popularCityBtn .btn:hover:nth-child(3){
+    background-color: #bda103;
+}
+.popularCityBtn .btn:hover:nth-child(4){
+    background-color: #386685;
+}
+
+/**/
+.drwpDown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.drwpDown::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    border: 1px dashed #559ac8;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.drwpDown span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    border: 2px solid #559ac8;
+    border-radius: 50%;
+    color: #559ac8;
+    font-size: 1.6rem;
+    line-height: 25px;
+    text-align: center;
+}
+/*content*/
+.content {
+    margin: 3rem 0;
+}
+.content .contentTitle {
+    color: #8A82CC;
+    text-align: center;
+    font-weight: 500;
+}
+.content .card {
+    margin-bottom: 2rem
+}
+/**/
+.outer-layer {
+    position: relative;
+    height: 0;
+    padding-bottom: 33%;
+    overflow: hidden; 
+}
+.outer-layer .img-layer {
+    transform: translateY(-25%);
+}
+.outer-layer h3, .outer-layer h4  {
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+}
+.outer-layer h3 {
+    left: 15px;
+}
+.outer-layer h4 {
+    right: 15px;
+}
+.card-body .card-text span, .card-body .card-text .tag span {
+    display: inline-block;
+    width: 17px;
+    margin-right: 5px;
+    text-align: center
+}
+.card-body .card-text:nth-child(1) span {
+    color: #8a82cc;
+}
+.card-body .card-text:nth-child(2) span {
+    color: #f5a623;
+}
+.card-body .card-text:nth-child(3) span {
+    color: #559ac8;
+}
+.card-body .card-text .tag.tag {
+    width: auto;
+    float: right;
+    color: #212529;
+}
+.card-body .card-text .tag span {
+    color: #F5D005;
+}
+/*頁碼*/
+.page-item.active .page-link {
+    background-color: #8a82cc;
+    border-color: #8a82cc;
+}
+.page-link {
+    color: #8a82cc;
+}
+.page-link:hover {
+    color: #5d588b;
+}
+/*footer*/
+.footer {
+    padding: 1.5rem 0;
+    text-align: center;
+    background-color: #559ac8;
+}
+.footer p {
+    color: #fff;
+}
+.footer p:last-child {
+    color: #FFD366
+}
+/*go to top*/
+#goTop {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #8a82cc;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.3s;
+    opacity: 0;
+}
+#goTop:hover {
+    background-color: #5d588b;
+}
+/*Mobile phone*/
+@media (max-width:767px) {
+    .popularCityBtn .btn ~ .btn {
+        margin-left: 0;
+    }
+    .popularCity h3, .popularCity .popularCityBtn {
+        text-align: center;
+    }
+    .popularCityBtn .btn {
+        margin-bottom: 15px;
+    }
+    .popularCityBtn .btn:nth-child(even) {
+        margin-left: 15px;
+    }
+}

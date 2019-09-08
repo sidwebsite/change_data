@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>高雄旅遊資訊</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <!--header-->
+        <header class="header">  
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="bigTitle">
+                            <h1>高雄旅遊資訊</h1>
+                            <form action="">
+                                <select name="" id="citySelect">
+                                    <option value="">--請選擇行政區--</option>
+                                    <option value="全部">全部</option>
+                                    <option value="三民區">三民區</option>
+                                    <option value="內門區">內門區</option>
+                                    <option value="美濃區">美濃區</option>
+                                    <option value="大樹區">大樹區</option>
+                                    <option value="小港區">小港區</option>
+                                    <option value="六龜區">六龜區</option>
+                                    <option value="仁武區">仁武區</option>
+                                    <option value="左營區">左營區</option>
+                                    <option value="田寮區">田寮區</option>
+                                    <option value="永安區">永安區</option>
+                                    <option value="甲仙區">甲仙區</option>
+                                    <option value="鼓山區">鼓山區</option>
+                                    <option value="杉林區">杉林區</option>                                    
+                                    <option value="岡山區">岡山區</option>                                    
+                                    <option value="前鎮區">前鎮區</option>
+                                    <option value="新興區">新興區</option>
+                                    <option value="苓雅區">苓雅區</option>
+                                    <option value="茂林區">茂林區</option>
+                                    <option value="茄萣區">茄萣區</option>
+                                    <option value="梓官區">梓官區</option>
+                                    <option value="旗津區">旗津區</option>
+                                    <option value="桃源區">桃源區</option>
+                                    <option value="楠梓區">楠梓區</option>
+                                    <option value="前金區">前金區</option>
+                                    <option value="鳳山區">鳳山區</option>
+                                </select>
+                            </form>               
+                        </div>
+                    </div>
+                </div>
+            </div>                        
+        </header>
+        <!--熱門行政區-->
+            <div class="container">                
+                <div class="row topOffset">
+                    <div class="col-lg-10 offset-lg-1 bg-white popularCity">                    
+                        <h3>熱門行政區</h3>
+                        <div class="popularCityBtn">
+                            <button class="btn" value="苓雅區">苓雅區</button>
+                            <button class="btn" value="三民區">三民區</button>
+                            <button class="btn" value="新興區">新興區</button>
+                            <button class="btn" value="岡山區">岡山區</button>
+                        </div>                                            
+                    </div>
+                </div>
+                <!---->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="drwpDown">
+                            <span id="btnDownId">
+                                <i class="fas fa-sort-down"></i>
+                            </span>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--content-->      
+        <section class="content">
+            <div class="container">
+                <!--行政區-->
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="contentTitle mb-5">所有行政區</h1>
+                    </div>
+                </div>
+                 <!--旅遊資訊-->
+                <div class="row" id="dataContentId"></div>
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center" id="paginationId">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" tabindex="-1" ria-disabled="true">Prev</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </div>
+            </div>           
+        </section>            
+        <!--footer-->
+        <footer class="footer">     
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>高雄旅遊網</p>
+                        <p>資料來源：高雄市政府</p>
+                    </div>
+                </div>
+            </div>             
+        </footer>
+    </div>
+    <!--go to top-->
+    <a href="#" id="goTop">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
+    <script src="js/main.js"></script>
+</body>
+</html>
